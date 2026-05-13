@@ -3,7 +3,7 @@ from fastapi import Depends
 from typing import Annotated
 
 engine = create_engine(
-    "sqlite://tasks.db",
+    "sqlite:///tasks.db",
     connect_args={"check_same_thread": False},
 )
 
