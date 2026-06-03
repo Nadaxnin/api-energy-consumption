@@ -8,4 +8,5 @@ class TaskCreate(BaseModel):
 
 
 class TaskUpdate(BaseModel):
-    completed: bool
+    title: str | None = None
+    completed: bool | None = None
