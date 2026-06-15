@@ -128,7 +128,8 @@ def create_result(api_name, successful_requests, total_time, latencies):
 
 
 def save_results(results):
-    output_path = PROJECT_ROOT / "benchmarks" / "results_get_tasks.csv"
+    timestamp = time.strftime("%Y%m%d_%H%M%S")
+    output_path = PROJECT_ROOT / "benchmarks" / f"results_get_tasks_{timestamp}.csv"
 
     with open(output_path, "w", newline="") as file:
         writer = csv.DictWriter(file, fieldnames=results[0].keys())
