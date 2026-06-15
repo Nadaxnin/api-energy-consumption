@@ -5,3 +5,4 @@ __pycache__/
 .vscode/
 app/tasks.db
 benchmarks/*.csv
+benchmarks/CodeCarbon
