@@ -6,3 +6,4 @@ __pycache__/
 app/tasks.db
 benchmarks/*.csv
 benchmarks/CodeCarbon
+/figures
